@@ -1,5 +1,6 @@
 Me2u::Application.routes.draw do
   resources :users
+  resources :stories
   root :to => 'users#new'
 
   # The priority is based upon order of creation:
