@@ -1,11 +1,6 @@
 Me2u::Application.routes.draw do
-  get "users/index"
-
-  get "users/update"
-
-  get "users/create"
-
-  get "users/show"
+  resources :users
+  root :to => 'users#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
